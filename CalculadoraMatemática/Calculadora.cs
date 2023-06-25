@@ -20,18 +20,19 @@ namespace CalculadoraMatemática
 
                 // Se mostrarán los mensajes de las operaciones respectivas en el menú principal.
 
-                Console.WriteLine(" Selecciona una operación matemática a realizar:n");
+                Console.WriteLine(" ************** BIENVENIDO DE NUEVO ************** ");
+                Console.WriteLine(" Selecciona una operación matemática a realizar: ");
                 Console.WriteLine(" + para sumar"); // Suma.
                 Console.WriteLine(" - para restar"); // Resta.
                 Console.WriteLine(" * para multiplicar"); // Multiplicación.
                 Console.WriteLine(" / para dividir"); // División.
-                Console.Write("n Elige una opción: "); // 4 operaciones a su elección.
+                Console.Write(" Elige una opción: "); // 4 operaciones a su elección.
                 resp = Console.ReadLine(); // Imprime cada respuesta con salto de línea.
                 string eleccion = Convert.ToString(resp); // Conversión a términos numéricos.
 
                 //  Mensajes para ingresar sus datos requeridos (opcional).
 
-                Console.WriteLine("nIngresa 2 númerosn"); // 2 Números cualquiera.
+                Console.WriteLine(" Ingresa 2 números "); // 2 Números cualquiera.
                 Console.Write("Valor 1: "); // Ingresar primer valor.
                 value1 = int.Parse(Console.ReadLine()); // Imprime el valor 1 ingresado en la consola.
                 Console.WriteLine("Valor 2: "); // Ingresar segundo valor.
@@ -64,7 +65,7 @@ namespace CalculadoraMatemática
                         Console.WriteLine("{0} / {1} = {2}", value1, value2, ResultadoFinal); // Se apoya mediante texto como se calcula la división.
                         break;
                 }
-                Console.Write("n¿Desea continuar? s/n: "); // Escibir s para continuar y n para salir.
+                Console.Write(" ¿Desea continuar? s/n: "); // Escibir s para continuar y n para salir.
                 resp = Console.ReadLine();
             }
             while (resp == "s" || resp == "s");
